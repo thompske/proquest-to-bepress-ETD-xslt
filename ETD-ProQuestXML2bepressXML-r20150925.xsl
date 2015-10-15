@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding="UTF-8" ?>
 
-<!-- Copyright 2012 The University of Iowa
+<!-- Copyright 2015 Kelly Thompson
 	Originally created by Shawn Averkamp and Joanna Lee
 	This program is free software: you can redistribute it and/or modify
 	it under the terms of the GNU General Public License as published by
