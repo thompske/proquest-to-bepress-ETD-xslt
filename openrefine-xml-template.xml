@@ -1,0 +1,78 @@
+ <!--The below goes in the Prefix field in Open Refine Templating Export-->
+<?xml version="1.0" encoding="UTF-8"?>
+<documents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:str="http://www.metaphoricalweb.org/xmlns/string-utilities" 
+   xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+   xmlns:util="http://blank"
+   xsi:noNamespaceSchemaLocation="http://www.bepress.com/document-import.xsd">  
+
+<!--The below goes in the Row Template field-->
+   <document>
+      <title>{{cells["title"].value}}</title>
+      <publication-date>2015-01-01</publication-date>
+      <publication_date_date_format>YYYY-MM-DD</publication_date_date_format>
+      <authors>
+         <author xsi:type="individual">
+            <email>{{cells["email"].value}}</email>
+            <institution>Iowa State University</institution>
+            <lname>{{cells["lname"].value}}</lname>
+            <fname>{{cells["fname"].value}}</fname>
+            {{if(isBlank(cells["mname"].value),"<mname/>","<mname>"+cells["mname"].value+"</mname>")}}
+            {{if(isBlank(cells["suffix"].value),"<suffix/>","<suffix>"+cells["suffix"].value+"</suffix>")}}
+         </author>
+      </authors>
+      <disciplines>
+         {{forEach(cells["disciplines"].value.split(";"), v, "<discipline>"+v+"</discipline>")}}
+      </disciplines>
+      <keywords>
+         {{forEach(cells["keywords"].value.split(","), v, "<keyword>"+v+"</keyword>")}}
+      </keywords>
+      <abstract>
+         {{cells["abstract"].value}}
+      </abstract>
+      <fulltext-url>{{cells["fulltext-url"].value}}</fulltext-url>
+      <document-type>{{cells["document-type"].value}}</document-type>
+      <degree_name>{{cells["degree_name"].value}}</degree_name>
+      <department>{{cells["department"].value}}</department>
+      <abstract_format>html</abstract_format>
+      <fields>
+         <field name="language" type="string">
+            <value>en</value>
+         </field>
+         <field name="provenance" type="string">
+            <value>Received from ProQuest</value>
+         </field>
+         <field name="copyright_date" type="string">
+            <value>2015</value>
+         </field>
+         <field name="embargo_date" type="date">
+            <value>{{cells["embargo_date"].value}}</value>
+         </field>
+         <field name="file_size" type="string">
+            <value>{{cells["file_size"].value}}</value>
+         </field>
+         <field name="fileformat" type="string">
+            <value>application/pdf</value>
+         </field>
+         <field name="rights_holder" type="string">
+            <value>{{cells["rights-holder"].value}}</value>
+         </field>
+         <field name="advisor1" type="string">
+            <value>{{cells["advisor1"].value}}</value>
+         </field>
+         {{if(isBlank(cells["advisor2"].value),'','<field name="advisor2" type="string">')}}
+            {{if(isBlank(cells["advisor2"].value),"","<value>"+cells["advisor2"].value+"</value>")}}
+         {{if(isBlank(cells["advisor2"].value),"","</field>")}}
+         {{if(isBlank(cells["advisor3"].value),'','<field name="advisor3" type="string">')}}
+            {{if(isBlank(cells["advisor3"].value),"","<value>"+cells["advisor3"].value+"</value>")}}
+         {{if(isBlank(cells["advisor3"].value),"","</field>")}}
+         {{if(isBlank(cells["major"].value),'','<field name="major" type="string">')}}
+            {{if(isBlank(cells["major"].value),"","<value>"+cells["major"].value+"</value>")}}
+         {{if(isBlank(cells["major"].value),"","</field>")}}
+      </fields>
+   </document>
+   
+<!--Leave the Row Separator field blank-->
+   
+<!--The below goes in the Suffix field-->
+</documents>
