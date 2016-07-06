@@ -1723,7 +1723,10 @@
 									<xsl:value-of>Architecture</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Art and Design'">
-									<xsl:value-of>Art and Design</xsl:value-of>
+									<xsl:value-of>Art and Visual Culture</xsl:value-of>
+								</xsl:when>
+								<xsl:when test=".='Art and Visual Culture'">
+									<xsl:value-of>Art and Visual Culture</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Biochemistry, Biophysics, and Molecular Biology'">
 									<xsl:value-of>Biochemistry, Biophysics and Molecular Biology</xsl:value-of>
@@ -1750,7 +1753,7 @@
 									<xsl:value-of>Computer Science</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Curriculum and Instruction'">
-									<xsl:value-of>Curriculum and Instruction</xsl:value-of>
+									<xsl:value-of>School of Education</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Ecology, Evolution, and Organismal Biology'">
 									<xsl:value-of>Ecology, Evolution, and Organismal Biology</xsl:value-of>
@@ -1759,7 +1762,7 @@
 									<xsl:value-of>Economics</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Educational Leadership and Policy Studies'">
-									<xsl:value-of>Educational Leadership and Policy Studies</xsl:value-of>
+									<xsl:value-of>School of Education</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Electrical and Computer Engineering'">
 									<xsl:value-of>Electrical and Computer Engineering</xsl:value-of>
@@ -1810,7 +1813,7 @@
 									<xsl:value-of>Theses &amp; dissertations (Interdisciplinary)</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Integrated Studio Arts'">
-									<xsl:value-of>Integrated Studio Arts</xsl:value-of>
+									<xsl:value-of>Art and Visual Culture</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Interdisciplinary Graduate Studies'">
 									<xsl:value-of>Theses &amp; dissertations (Interdisciplinary)</xsl:value-of>
@@ -1859,6 +1862,9 @@
 								</xsl:when>
 								<xsl:when test=".='Psychology'">
 									<xsl:value-of>Psychology</xsl:value-of>
+								</xsl:when>
+								<xsl:when test=".='School of Education'">
+									<xsl:value-of>School of Education</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Sociology'">
 									<xsl:value-of>Sociology</xsl:value-of>
