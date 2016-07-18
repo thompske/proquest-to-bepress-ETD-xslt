@@ -60,7 +60,7 @@
 	xmlns:str="http://www.metaphoricalweb.org/xmlns/string-utilities"
 	xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:util="http://blank">
 
-	<xsl:output method="xml" indent="yes"/>
+	<xsl:output method="xml" indent="yes" encoding="iso-8859-1"/>
 
 	<!-- Transform of ProQuest XML to Digital Commons XML Schema for Electronic Theses and Dissertations (ETDs) -->
 
