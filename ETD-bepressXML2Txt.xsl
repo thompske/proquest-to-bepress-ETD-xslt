@@ -15,7 +15,7 @@
 		along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	-->
 	
-	<xsl:output method="text" version="1.0" encoding="iso-8859-1"/>
+	<xsl:output method="text" version="1.0"/>
 	<!-- Transform of bepress XML to a tab-delimited file for Electronic Theses and Dissertations (ETDs) -->
 	
 	<xsl:template match="/">
