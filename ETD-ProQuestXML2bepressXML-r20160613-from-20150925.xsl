@@ -1753,7 +1753,7 @@
 									<xsl:value-of>Computer Science</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Curriculum and Instruction'">
-									<xsl:value-of>School of Education</xsl:value-of>
+									<xsl:value-of>Education</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Ecology, Evolution, and Organismal Biology'">
 									<xsl:value-of>Ecology, Evolution, and Organismal Biology</xsl:value-of>
@@ -1761,8 +1761,11 @@
 								<xsl:when test=".='Economics'">
 									<xsl:value-of>Economics</xsl:value-of>
 								</xsl:when>
+								<xsl:when test=".='Education'">
+									<xsl:value-of>Education</xsl:value-of>
+								</xsl:when>
 								<xsl:when test=".='Educational Leadership and Policy Studies'">
-									<xsl:value-of>School of Education</xsl:value-of>
+									<xsl:value-of>Education</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Electrical and Computer Engineering'">
 									<xsl:value-of>Electrical and Computer Engineering</xsl:value-of>
@@ -1864,7 +1867,7 @@
 									<xsl:value-of>Psychology</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='School of Education'">
-									<xsl:value-of>School of Education</xsl:value-of>
+									<xsl:value-of>Education</xsl:value-of>
 								</xsl:when>
 								<xsl:when test=".='Sociology'">
 									<xsl:value-of>Sociology</xsl:value-of>
