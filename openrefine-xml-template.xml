@@ -1,5 +1,11 @@
- <!--The below goes in the Prefix field in Open Refine Templating Export-->
-<?xml version="1.0" encoding="UTF-8"?>
+<!-- You can use Open Refine to convert a spreadsheet (such as those used in the quality control
+process) into XML for upload.  This template is the template you put in the dialog you get when you 
+select the "Export" tab at the top right of the Open Refine workspace, and select "Templating..." 
+from the resulting drop-down menu. Summer 2016 -->
+
+
+<!--The below goes in the Prefix field in Open Refine Templating Export-->
+<?xml version="1.0" encoding="ISO-8859-1"?>
 <documents xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xmlns:str="http://www.metaphoricalweb.org/xmlns/string-utilities" 
    xmlns:xs="http://www.w3.org/2001/XMLSchema" 
